@@ -1,0 +1,12 @@
+services:
+  lms-runner:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: harbor.alie.javeriana.edu.co/images/lms-runner:latest
+    labels:
+      kompose.controller.type: daemonset
+    ports:
+      - 5900:5900
+    expose:
+      - 5900
