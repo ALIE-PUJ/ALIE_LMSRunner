@@ -8,5 +8,7 @@ services:
       kompose.controller.type: daemonset
     ports:
       - 5900:5900
+      - 1234:1234
     expose:
       - 5900
+      - 1234
