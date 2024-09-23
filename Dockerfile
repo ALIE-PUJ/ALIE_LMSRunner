@@ -19,5 +19,9 @@ RUN echo 'sleep 20 && echo "y\n" | ~/.cache/lm-studio/bin/lms bootstrap &' >> ~/
 RUN echo "tail -f /dev/null" >> ~/.xinitrc
 RUN chmod +x ~/.xinitrc
 
+# Carga el script de lanzamiento de VNC
+COPY vnc-start.sh /app/vnc-start.sh
+RUN chmod +x /app/vnc-start.sh
+
 # Inicia el servidor VNC
-CMD ["x11vnc", "-create", "-noxrecord", "-noxfixes", "-noxdamage", "-forever", "-passwd", "trustno1"]
+ENTRYPOINT ["/app/vnc-start.sh"]
