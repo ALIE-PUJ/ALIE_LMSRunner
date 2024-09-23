@@ -24,4 +24,4 @@ COPY vnc-start.sh /app/vnc-start.sh
 RUN chmod +x /app/vnc-start.sh
 
 # Inicia el servidor VNC
-ENTRYPOINT ["/app/vnc-start.sh"]
+CMD ["/app/vnc-start.sh"]
