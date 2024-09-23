@@ -21,8 +21,8 @@ echo "y\n" | ~/.cache/lm-studio/bin/lms bootstrap
 
 echo Starting LMStudio Server...
 /root/.cache/lm-studio/bin/lms import ./alie_model-q4_k_m.gguf --yes --verbose --user-repo alie/alie_model-q4_k_m -l
-/root/.cache/lm-studio/bin/lms load 
 /root/.cache/lm-studio/bin/lms server start --cors --yes --verbose
+/root/.cache/lm-studio/bin/lms load --gpu max --yes --verbose alie/alie_model-q4_k_m
 
 echo Starting VNC server...
 x11vnc -noxrecord -noxfixes -noxdamage -forever -passwd trustno1 -display $DISPLAY -auth /tmp/xvfb.auth
