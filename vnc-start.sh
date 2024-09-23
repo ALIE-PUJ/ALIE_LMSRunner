@@ -2,6 +2,8 @@
 
 export DISPLAY=:1
 
+rm /tmp/.X1-lock -fv
+
 echo Starting X server...
 Xvfb $DISPLAY -screen 0 1080x720x24 &
 echo Started X server!
