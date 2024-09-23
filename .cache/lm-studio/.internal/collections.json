@@ -1,0 +1,59 @@
+{
+  "subscribed": [
+    {
+      "id": "lmstudio-ai/general-use-668ec0995efe9be005c564ea",
+      "title": "General Use",
+      "description": "General purpose chatbot-like LLMs you can run on your computer",
+      "ownerFullName": "LM Studio",
+      "lastCheckedTimestamp": 0,
+      "lastUpdatedTimestamp": 1722517784000,
+      "updatesSinceLastChecked": 4,
+      "numModels": 4,
+      "error": null
+    },
+    {
+      "id": "lmstudio-ai/coding-668ec136b2563ccd6772eb4e",
+      "title": "Coding",
+      "description": "Models trained and/or fine-tuned for coding tasks",
+      "ownerFullName": "LM Studio",
+      "lastCheckedTimestamp": 0,
+      "lastUpdatedTimestamp": 1719160168000,
+      "updatesSinceLastChecked": 5,
+      "numModels": 5,
+      "error": null
+    },
+    {
+      "id": "lmstudio-ai/tools-use-rag-function-calling-668ec21bb25b63eba9b8e86c",
+      "title": "Tools Use (RAG, Function Calling)",
+      "description": "Models specifically fine-tuned for function calling, tool-use, or RAG",
+      "ownerFullName": "LM Studio",
+      "lastCheckedTimestamp": 0,
+      "lastUpdatedTimestamp": 1719084610000,
+      "updatesSinceLastChecked": 3,
+      "numModels": 3,
+      "error": null
+    },
+    {
+      "id": "lmstudio-ai/multilingual-668ec869d6b050a1243b3761",
+      "title": "Multilingual",
+      "description": "Models trained to perform well in more than one language",
+      "ownerFullName": "LM Studio",
+      "lastCheckedTimestamp": 0,
+      "lastUpdatedTimestamp": 1716493086000,
+      "updatesSinceLastChecked": 2,
+      "numModels": 2,
+      "error": null
+    },
+    {
+      "id": "lmstudio-ai/smol-models-668ec8a3560826683ec4d1f4",
+      "title": "Smol Models",
+      "description": "Very small Large Language Models. Runs fast, might be quirky",
+      "ownerFullName": "LM Studio",
+      "lastCheckedTimestamp": 0,
+      "lastUpdatedTimestamp": 1719198799000,
+      "updatesSinceLastChecked": 1,
+      "numModels": 1,
+      "error": null
+    }
+  ]
+}

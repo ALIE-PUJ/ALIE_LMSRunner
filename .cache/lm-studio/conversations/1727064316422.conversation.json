@@ -1,0 +1,16 @@
+{
+  "name": null,
+  "systemPrompt": "",
+  "messages": [],
+  "usePerChatPredictionConfig": true,
+  "perChatPredictionConfig": {
+    "fields": []
+  },
+  "tokenCount": 0,
+  "createdAt": 1727064316423,
+  "pinned": false,
+  "clientInput": "",
+  "clientInputFiles": [],
+  "userFilesSizeBytes": 0,
+  "notes": []
+}

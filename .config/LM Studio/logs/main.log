@@ -1,0 +1,18 @@
+[2024-09-22 23:05:12.679] [info]  App starting...
+[2024-09-22 23:05:13.348] [info]  Error while surveying hardware with backend 'llama.cpp-linux-x86_64-nvidia-cuda-avx2', version '1.1.7': LMSCore load lib failed - child process with PID 261213 exited with code 1
+[2024-09-22 23:05:13.724] [info]  Creating config map file at /home/juancsu/.cache/lm-studio/config-presets/config.map.json
+[2024-09-22 23:05:14.789] [info]  [AppUpdater] Checking for updates... (current state: idle)
+[2024-09-22 23:05:14.790] [info]  AppUpdater state changed to checking-for-updates-periodic
+[2024-09-22 23:05:14.791] [info]  [AppUpdater] Fetching version info from https://versions-prod.lmstudio.ai/linux/x86/0.3.2
+[2024-09-22 23:05:15.173] [info]  [AppUpdater] Version fetch url: https://versions-prod.lmstudio.ai/linux/x86/0.3.2
+[2024-09-22 23:05:15.178] [info]  [AppUpdater] Version info response: {
+  os: 'linux',
+  arch: 'x86',
+  version: '0.3.0',
+  releaseNotes: 'No release notes found.'
+}
+[2024-09-22 23:05:15.183] [info]  [AppUpdater] Current version: 0.3.2, latest version: 0.3.0
+[2024-09-22 23:05:15.184] [info]  No update available: 0.3.0 <= 0.3.2
+[2024-09-22 23:05:15.185] [info]  AppUpdater state changed to idle
+[2024-09-22 23:05:16.226] [info]  Checking if LM Studio dev tools exist on the system...
+[2024-09-22 23:05:16.243] [info]  LM Studio dev tools are not present, copying them over to .cache/lm-studio/bin...

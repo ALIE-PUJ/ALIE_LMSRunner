@@ -1,0 +1,33 @@
+{
+  "downloadsFolder": "/home/juancsu/.cache/lm-studio/models",
+  "sidebar": {
+    "showButtonNames": false
+  },
+  "configs": {
+    "expandConfigsOnClick": true
+  },
+  "chat": {
+    "showSuggestionsOnNewChat": false,
+    "alwaysShowPromptTemplate": false,
+    "useShiftEnterToSendMessage": false,
+    "useKeychordToRegenerate": true
+  },
+  "developer": {
+    "showExperimentalFeatures": false
+  },
+  "unloadPreviousModelOnSelect": true,
+  "language": "en",
+  "toggledConfigDropdowns": [],
+  "userInterfaceComplexityLevel": 2,
+  "showDebugInfoBlocksInChat": false,
+  "showModelDownloadOptionData": false,
+  "appFirstLoad": true,
+  "autoLoadBundledLLM": true,
+  "backendDownloadChannel": "stable",
+  "modelLoadingGuardrails": {
+    "mode": "high",
+    "customThresholdBytes": 4294967296
+  },
+  "dismissedModals": [],
+  "pre030ChatsMigrated": 2
+}

@@ -1,0 +1,62 @@
+{
+  "models": [
+    {
+      "indexedModelIdentifier": "nomic-ai/nomic-embed-text-v1.5-GGUF/nomic-embed-text-v1.5.Q4_K_M.gguf",
+      "displayName": "Nomic Embed Text v1.5",
+      "containingDirSubpath": "nomic-ai/nomic-embed-text-v1.5-GGUF",
+      "containingDirMtime": 1727064311118,
+      "containingDirAbsolutePath": "/tmp/appimage_extracted_31765a4092384eb401a4d6226ae151b6/resources/app/.webpack/main/bundled-models/nomic-ai/nomic-embed-text-v1.5-GGUF",
+      "sourceDirectoryType": "bundled",
+      "format": "gguf",
+      "domain": "embedding",
+      "metadata": {
+        "gguf": {
+          "arch": "nomic-bert",
+          "name": "nomic-embed-text-v1.5",
+          "parameters": "",
+          "bosToken": "[CLS]",
+          "eosToken": "[SEP]",
+          "contextLength": 2048,
+          "numLayers": 12
+        }
+      },
+      "allFiles": [
+        {
+          "filename": "nomic-embed-text-v1.5.Q4_K_M.gguf",
+          "ext": "gguf",
+          "absPath": "/tmp/appimage_extracted_31765a4092384eb401a4d6226ae151b6/resources/app/.webpack/main/bundled-models/nomic-ai/nomic-embed-text-v1.5-GGUF/nomic-embed-text-v1.5.Q4_K_M.gguf",
+          "relPath": "nomic-ai/nomic-embed-text-v1.5-GGUF/nomic-embed-text-v1.5.Q4_K_M.gguf",
+          "sizeBytes": 84106624
+        }
+      ],
+      "concreteModelDirAbsolutePath": "/tmp/appimage_extracted_31765a4092384eb401a4d6226ae151b6/resources/app/.webpack/main/bundled-models/nomic-ai/nomic-embed-text-v1.5-GGUF",
+      "entryPoint": {
+        "filename": "nomic-embed-text-v1.5.Q4_K_M.gguf",
+        "ext": "gguf",
+        "absPath": "/tmp/appimage_extracted_31765a4092384eb401a4d6226ae151b6/resources/app/.webpack/main/bundled-models/nomic-ai/nomic-embed-text-v1.5-GGUF/nomic-embed-text-v1.5.Q4_K_M.gguf",
+        "relPath": "nomic-ai/nomic-embed-text-v1.5-GGUF/nomic-embed-text-v1.5.Q4_K_M.gguf",
+        "sizeBytes": 84106624
+      },
+      "quant": {
+        "bits": 4,
+        "name": "Q4_K_M"
+      },
+      "sizeBytes": 84106624,
+      "selfFiles": [
+        {
+          "filename": "nomic-embed-text-v1.5.Q4_K_M.gguf",
+          "ext": "gguf",
+          "absPath": "/tmp/appimage_extracted_31765a4092384eb401a4d6226ae151b6/resources/app/.webpack/main/bundled-models/nomic-ai/nomic-embed-text-v1.5-GGUF/nomic-embed-text-v1.5.Q4_K_M.gguf",
+          "relPath": "nomic-ai/nomic-embed-text-v1.5-GGUF/nomic-embed-text-v1.5.Q4_K_M.gguf",
+          "sizeBytes": 84106624
+        }
+      ],
+      "altIndexedModelIdentifier": "nomic-ai/nomic-embed-text-v1.5-GGUF"
+    }
+  ],
+  "conflicts": [],
+  "unclassifiedFileAbsPaths": [],
+  "unresolvedVirtualModels": [],
+  "badModels": [],
+  "errors": []
+}
