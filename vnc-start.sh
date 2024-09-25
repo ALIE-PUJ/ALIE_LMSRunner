@@ -20,7 +20,14 @@ echo Bootstrapping LMStudio CLI...
 echo "y\n" | ~/.cache/lm-studio/bin/lms bootstrap
 
 echo Starting LMStudio Server...
+echo Importing model to the server ...
 /root/.cache/lm-studio/bin/lms import ./alie_model-q4_k_m.gguf --yes --verbose --user-repo alie/alie_model-q4_k_m -l
+
+echo Restarting LMStudio app...
+ps | grep LM_Studio | awk '{print $1}' | xargs kill -s 15
+/app/LM_Studio-0.3.2.AppImage --appimage-extract-and-run --no-sandbox &
+sleep 20
+
 /root/.cache/lm-studio/bin/lms server start --cors --yes --verbose
 /root/.cache/lm-studio/bin/lms load --gpu max --yes --verbose alie/alie_model-q4_k_m
 
