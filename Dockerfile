@@ -25,7 +25,5 @@ COPY .config /root/.config
 COPY vnc-start.sh /app/vnc-start.sh
 RUN chmod +x /app/vnc-start.sh
 
-# RUN ./vnc-start.sh
-
 # Inicia el servidor VNC
 CMD ["/app/vnc-start.sh"]

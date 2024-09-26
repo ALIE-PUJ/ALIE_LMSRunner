@@ -12,17 +12,21 @@ echo Starting DE...
 exec startxfce4 &
 sleep 5
 
+echo Bootstrapping LMStudio CLI...
+echo "y\n" | ~/.cache/lm-studio/bin/lms bootstrap
+
+echo Importing model...
+/root/.cache/lm-studio/bin/lms import ./alie_model-q4_k_m.gguf --yes --verbose --user-repo alie/alie_model-q4_k_m -l
+
 echo Starting LMStudio...
 /app/LM_Studio-0.3.2.AppImage --appimage-extract-and-run --no-sandbox &
 sleep 20
 
-echo Bootstrapping LMStudio CLI...
-echo "y\n" | ~/.cache/lm-studio/bin/lms bootstrap
-
 echo Starting LMStudio Server...
-/root/.cache/lm-studio/bin/lms import ./alie_model-q4_k_m.gguf --yes --verbose --user-repo alie/alie_model-q4_k_m -l
 /root/.cache/lm-studio/bin/lms server start --cors --yes --verbose
-/root/.cache/lm-studio/bin/lms load --gpu max --yes --verbose alie/alie_model-q4_k_m
+
+echo Loading model
+/root/.cache/lm-studio/bin/lms load alie/alie_model-q4_k_m --gpu max --yes --verbose
 
 echo Starting VNC server...
 x11vnc -noxrecord -noxfixes -noxdamage -forever -passwd trustno1 -display $DISPLAY -auth /tmp/xvfb.auth
