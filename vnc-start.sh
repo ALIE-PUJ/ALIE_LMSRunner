@@ -26,7 +26,7 @@ echo Starting LMStudio Server...
 /root/.cache/lm-studio/bin/lms server start --cors --yes --verbose
 
 echo Loading model
-/root/.cache/lm-studio/bin/lms load alie/alie_model-q4_k_m --gpu max --yes --verbose
+/root/.cache/lm-studio/bin/lms load alie/alie_model-q4_k_m --gpu $GPU_OFFLOAD --yes --verbose
 
 echo Starting VNC server...
 x11vnc -noxrecord -noxfixes -noxdamage -forever -passwd trustno1 -display $DISPLAY -auth /tmp/xvfb.auth

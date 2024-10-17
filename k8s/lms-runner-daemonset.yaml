@@ -25,6 +25,9 @@ spec:
               protocol: TCP
             - containerPort: 1234
               protocol: TCP
+          env:
+            - name: GPU_OFFLOAD
+              value: "0.828"
           livenessProbe:
             exec:
               command:
