@@ -34,6 +34,7 @@ spec:
                 - 'Content-Type: application/json'
                 - -d 
                 - '{"model": "alie_model-q4_k_m","messages": [{ "role": "system", "content": "Always answer in rhymes. Today is Thursday" },{ "role": "user", "content": "What day is it today?" }],"temperature": 0.7,"max_tokens": -1,"stream": false}'
+                - -f
             initialDelaySeconds: 60
             periodSeconds: 20
           resources:
