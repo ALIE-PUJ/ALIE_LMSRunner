@@ -25,6 +25,17 @@ spec:
               protocol: TCP
             - containerPort: 1234
               protocol: TCP
+          livenessProbe:
+            exec:
+              command:
+                - curl 
+                - http://localhost:1234/v1/chat/completions
+                - -H 
+                - 'Content-Type: application/json'
+                - -d 
+                - '{"model": "alie_model-q4_k_m","messages": [{ "role": "system", "content": "Always answer in rhymes. Today is Thursday" },{ "role": "user", "content": "What day is it today?" }],"temperature": 0.7,"max_tokens": -1,"stream": false}'
+            initialDelaySeconds: 60
+            periodSeconds: 20
           resources:
             limits:
               nvidia.com/gpu: 1
