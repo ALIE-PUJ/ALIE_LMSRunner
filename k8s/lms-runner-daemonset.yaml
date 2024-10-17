@@ -25,4 +25,11 @@ spec:
               protocol: TCP
             - containerPort: 1234
               protocol: TCP
+          resources:
+            limits:
+              nvidia.com/gpu: 1
       restartPolicy: Always
+      tolerations:
+        - key: nvidia.com/gpu
+          operator: Exists
+          effect: NoSchedule
