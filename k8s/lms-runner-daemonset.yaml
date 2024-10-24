@@ -40,7 +40,7 @@ spec:
               command:
                 - bash
                 - /app/health.sh
-            initialDelaySeconds: 60
+            initialDelaySeconds: 10
             periodSeconds: 1
           resources:
             limits:
