@@ -27,6 +27,7 @@ RUN chmod +x /app/vnc-start.sh
 
 # Agrega herramientas de checkeo
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install jq -y
+COPY health.sh /app/health.sh
 
 # Inicia el servidor VNC
 CMD ["/app/vnc-start.sh"]
