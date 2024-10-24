@@ -33,8 +33,15 @@ spec:
               command:
                 - bash
                 - /app/health.sh
-            initialDelaySeconds: 60
+            initialDelaySeconds: 120
             periodSeconds: 2
+          readinessProbe:
+            exec:
+              command:
+                - bash
+                - /app/health.sh
+            initialDelaySeconds: 60
+            periodSeconds: 1
           resources:
             limits:
               nvidia.com/gpu: 1
